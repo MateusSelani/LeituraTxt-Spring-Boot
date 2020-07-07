@@ -1,0 +1,36 @@
+[33mcommit 609916e59b26a6f573b14cc75b4d638760a27030[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: 58e368f ed6ceaf
+Author: Mateus Selani <selaneitor@gmail.com>
+Date:   Tue Jul 7 11:09:48 2020 -0300
+
+    Merge branch 'feature/adicionandoModels' into develop
+
+[33mcommit ed6ceafa597dcd325f9934ceed289dd9e79fa444[m
+Author: Mateus Selani <selaneitor@gmail.com>
+Date:   Tue Jul 7 11:06:58 2020 -0300
+
+    Alterando tipo do arquivo e adicionando replace
+
+[33mcommit 8c9bd533e4691f83ddab13da3a765cb75855f4a4[m
+Author: Mateus Selani <selaneitor@gmail.com>
+Date:   Tue Jul 7 09:46:50 2020 -0300
+
+    Add Models
+
+[33mcommit 58e368f9bd05683baefc46b602854dd6aa7fd798[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Mateus Selani <selaneitor@gmail.com>
+Date:   Mon Jul 6 14:26:01 2020 -0300
+
+    Adicionando metodo de leitura do arquivo TXT
+
+[33mcommit 695b0bb2cc61ed6f76a14a0892f29de21ef4ea21[m
+Author: Mateus Selani <selaneitor@gmail.com>
+Date:   Mon Jul 6 09:43:03 2020 -0300
+
+    Primeiro Commit - iniciando projeto Spring Boot
+
+[33mcommit 9d532916c3527670aa0c346167f744f57829f053[m
+Author: Mateus Selani <selaneitor@gmail.com>
+Date:   Mon Jul 6 09:42:20 2020 -0300
+
+    Initial commit

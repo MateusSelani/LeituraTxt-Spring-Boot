@@ -23,10 +23,10 @@ public class LendoArquivoTXT {
 
 		String arquivoString = new String(arquivoByte, "UTF-8");
 		
-		arquivoString.replace(" ", ";");
+		String arquivoSeparado = arquivoString.replace(" ", ";");
 		
-//		String coluna1 = (String) arquivoString.subSequence(0, 4);
+//		String coluna1 = arquivoSeparado.matches(";");
 
-		return arquivoString;
+		return arquivoSeparado;
 	}
 }

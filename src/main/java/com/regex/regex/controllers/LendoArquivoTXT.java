@@ -8,15 +8,25 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.regex.regex.models.RegexModels;
+
 @RestController
 @RequestMapping("/teste")
 public class LendoArquivoTXT {
 
-	MultipartFile arquivoTXT;
+	RegexModels arquivoModels;
 
 	@PostMapping
-	public byte[] upload(@RequestParam("texto") MultipartFile arquivoTXT) throws IOException {
+	public String upload(@RequestParam("texto") MultipartFile arquivoTXT) throws IOException {
 
-		return arquivoTXT.getBytes();
+		byte[] arquivoByte = arquivoTXT.getBytes();
+
+		String arquivoString = new String(arquivoByte, "UTF-8");
+		
+		arquivoString.replace(" ", ";");
+		
+//		String coluna1 = (String) arquivoString.subSequence(0, 4);
+
+		return arquivoString;
 	}
 }

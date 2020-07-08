@@ -2,7 +2,6 @@ package com.regex.regex.controllers;
 
 import java.io.IOException;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,7 +18,7 @@ public class LendoArquivoTXT {
 	RegexModels arquivoModels;
 
 	@PostMapping
-	public String upload(@RequestParam("texto") MultipartFile arquivoTXT) throws IOException {
+	public String[] upload(@RequestParam("texto") MultipartFile arquivoTXT) throws IOException {
 
 //		Trazendo arquivo TXT - Retorno MultipartFile é byte[]
 		byte[] arquivoByte = arquivoTXT.getBytes();
@@ -32,9 +31,14 @@ public class LendoArquivoTXT {
 		
 //		Coluna 1 do arquivo
 		String coluna1 = sentenca.replaceAll("\\s\\d+\\s\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\s[A-Z,a-z,0-9]+\\s.*;\\n", ";");
-//		RegexModels.builder().descricao(coluna1).build();
 		
-		return coluna1;
+//		Array coluna 1
+		String quebraColuna1[] = new String[coluna1.length()];
+		quebraColuna1 = coluna1.split(";");
+		
+//		RegexModels.builder().id_garrafa(1).maquina("tal").descricao(quebraColuna1).build();
+		
+		return quebraColuna1;
 	}
 	
 }

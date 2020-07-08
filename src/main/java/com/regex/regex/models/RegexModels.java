@@ -18,7 +18,7 @@ public class RegexModels {
 	
 	private String maquina;
 
-	private String descricao;
+	private String[] descricao;
 	
 //	private Date data;
 }

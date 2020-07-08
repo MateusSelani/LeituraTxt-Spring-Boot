@@ -17,7 +17,7 @@ public class RegexModels {
 	private long id_garrafa;
 	
 	private String maquina;
-	
+
 	private String descricao;
 	
 //	private Date data;
